@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import Movie from "./pages/Movie";
+import Category from "./pages/Category";
 
 function App() {
     return (
@@ -20,16 +20,14 @@ function App() {
                         <Route exact path='/' component={Home}/>
                         <Route path='/contacts' component={Contact}/>
                         <Route path='/about' component={About}/>
-                        <Route path='/movies/:title' component={Movie}/>
+                        <Route path='/category/:name' component={Category}/>
                         <Route component={NotFound}/>
                     </Switch>
-
                 </main>
                 <Footer/>
             </Router>
         </>
-    )
-        ;
+    );
 }
 
 export default App;
